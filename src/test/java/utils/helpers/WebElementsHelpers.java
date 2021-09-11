@@ -48,7 +48,7 @@ public class WebElementsHelpers {
         return !element.isDisplayed();
     }
 
-    public static String weGetAttribute(WebElement element, String attribute) {
+    public String weGetAttribute(WebElement element, String attribute) {
         return element.getAttribute(attribute);
     }
 }
