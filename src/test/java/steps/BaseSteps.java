@@ -1,15 +1,13 @@
 package steps;
 
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.BasePage;
-import pages.Page;
 
 public class BaseSteps extends BasePage {
 
     @Then("^they see the page title contains \"([^\"]*)\"$")
-    public void they_see_the_page_title_contains(String expectedTitle) throws Throwable {
+    public void they_see_the_page_title_contains(String expectedTitle) {
         validatePageTitle(expectedTitle);
     }
 
@@ -19,7 +17,7 @@ public class BaseSteps extends BasePage {
     }
 
     @Then("^they see the page Url contains \"([^\"]*)\"$")
-    public void theySeeThePageUrlContains(String expectedUrl) throws Throwable {
+    public void theySeeThePageUrlContains(String expectedUrl) {
         validatePageUrl(expectedUrl);
     }
 

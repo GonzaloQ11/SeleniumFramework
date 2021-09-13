@@ -9,13 +9,13 @@ import java.util.List;
 
 public class AuthenticationPage extends BasePage{
     @FindBy(how = How.ID, using = "email")
-    public WebElement emailInput;
+    private WebElement emailInput;
     @FindBy(how = How.ID, using = "passwd")
-    public WebElement passwordInput;
+    private WebElement passwordInput;
     @FindBy(how = How.ID, using = "SubmitLogin")
-    public WebElement signInSubmitButton;
+    private WebElement signInSubmitButton;
     @FindBy(how = How.CSS, using = ".alert-danger li")
-    public WebElement errorMessageText;
+    private WebElement errorMessageText;
 
     public void assertSignInSubmitButtonDisplayed() {
         Assert.assertTrue(elementHelpers.weElementIsDisplayed(signInSubmitButton));

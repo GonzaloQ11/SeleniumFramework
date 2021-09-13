@@ -27,7 +27,7 @@ public class CucumberHooks {
         DriverController.instance.startFirefox("--headless");
     }
 
-    //@After
+    @After
     public void stopWebDriver() {
         DriverController.instance.stopWebDriver();
     }
